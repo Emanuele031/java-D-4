@@ -1,0 +1,17 @@
+class Dipendente:
+    def __init__(self, matricola, stipendio, dipartimento):
+        self.matricola = matricola
+        self.stipendio = stipendio
+        self.dipartimento = dipartimento
+
+# Creazione di 3 dipendenti
+dipendente1 = Dipendente(101, 1500.00, 'PRODUZIONE')
+dipendente2 = Dipendente(102, 2000.00, 'AMMINISTRAZIONE')
+dipendente3 = Dipendente(103, 1800.00, 'VENDITE')
+
+# Creazione dell'array con i dipendenti
+dipendenti = [dipendente1, dipendente2, dipendente3]
+
+# Iterazione sull'array e stampa della matricola di ciascun dipendente
+for dipendente in dipendenti:
+    print(f"Matricola: {dipendente.matricola}")
